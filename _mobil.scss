@@ -1,0 +1,11 @@
+$padding: 16px;
+
+img {
+    max-width: 100%;
+    height: auto;
+    display:block
+}
+
+body {
+    padding: $padding;
+}
