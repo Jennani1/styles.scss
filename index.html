@@ -9,87 +9,88 @@
 <body>
 
   <header>
-    <h1>Tidningsnamn</h1>   
-    <nav>
+    <div class="header-left">
+     <h1>Tidningsnamn</h1>   
+    </div>
+     <nav>
+    <div>
       <form>
         <input type="text" placeholder="sök" />
         <button type="submit">sök</button>
       </form>
-    </nav>
-    <img width="100" height="100" src="aftonbladet.jpg.jpg" alt="logotype">
+    </div>
+     </nav>
+    <div>
+     <img width="100" height="100" src="aftonbladet.jpg.jpg" alt="logotype">
+    </div>
   </header>
 
-  <article>
-    <h2>Huvudartikelns titel</h2>
-    <figure>
-      <img src="aftonbladet.jpg.jpg" alt="bild" width="100" height="150" />
-      <figcaption>Byline</figcaption>
-    </figure>
-    <p>Carrot cake muffin donut cotton</p>
-    <blockquote>
-      "appel pie pie cupcake dessert lollipop"
-    </blockquote>
-    <button type="submit">Läs mer</button>
-  </article>
+  <main>
+    <article>
+      <h2>Huvudartikelns titel</h2>
+      <figure>
+        <img src="aftonbladet.jpg.jpg" alt="bild" width="100" height="150" />
+        <figcaption>Byline</figcaption>
+      </figure>
+      <p>Carrot cake muffin donut cotton</p>
+      <blockquote>
+        "appel pie pie cupcake dessert lollipop"
+      </blockquote>
+      <button type="submit">Läs mer</button>
+    </article>
 
-  <hr />
+    <article>
+      <h2>Andra artikels titel</h2>
+      <p>The path of the righteous man is the best</p>
+      <button type="submit">Läs mer</button>
+    </article>
 
-  <article>
-    <h2>Andra artikels titel</h2>
-    <p>The path of the righteous man is the best</p>
-    <button type="submit">Läs mer</button>
-  </article>
+    <article>
+      <h3>Tredje artikeln</h3>
+      <p>Lorizzel Lorizzel</p>
+      <figure>
+        <img src="aftonbladet.jpg.jpg" alt="bild" width="50" height="100" />
+      </figure>
+      <button type="submit">Läs mer</button>
+    </article>
 
-  <hr />
+    <section>
+      <h4>Tipsa redaktionen</h4>
+      <form>
+        <label>Ditt namn:<br />
+          <input type="text" name="namn" />
+        </label><br />
 
-  <article>
-    <h3>Tredje artikeln</h3>
-    <p>Lorizzel Lorizzel</p>
-    <figure>
-      <img src="aftonbladet.jpg.jpg" alt="bild" width="50" height="100" />
-    </figure>
-    <button type="submit">Läs mer</button>
-  </article>
+        <label>Din e-post:<br />
+          <input type="email" name="epost" />
+        </label><br />
 
-  <hr />
+        <label>Din telefon:<br />
+          <input type="tel" name="telefon" />
+        </label><br />
 
-  <section>
-    <h4>Tipsa redaktionen</h4>
-    <form>
-      <label>Ditt namn:<br />
-        <input type="text" name="namn" />
-      </label><br />
+        <label>Välj ämne:<br />
+          <select name="amne"></select>
+        </label><br />
 
-      <label>Din e-post:<br />
-        <input type="email" name="epost" />
-      </label><br />
+        <label>Meddelande:<br />
+          <textarea rows="4" cols="30" name="meddelande"></textarea>
+        </label><br />
 
-      <label>Din telefon:<br />
-        <input type="tel" name="telefon" />
-      </label><br />
+        <label>
+          <input type="checkbox" name="kontakt" />
+          Kontakta mig
+        </label><br />
 
-      <label>Välj ämne:<br />
-        <select name="amne"></select>
-      </label><br />
-
-      <label>Meddelande:<br />
-        <textarea rows="4" cols="30" name="meddelande"></textarea>
-      </label><br />
-
-      <label>
-        <input type="checkbox" name="kontakt" />
-        Kontakta mig
-      </label><br />
-
-      <button type="submit">Skicka</button><br />
-      <small>
-        <a href="/villkor-gdpr.html" target="_blank">GDPR och villkor</a>
-      </small>
-    </form>
-  </section>
+        <button type="submit">Skicka</button><br />
+        <small>
+          <a href="/villkor-gdpr.html" target="_blank">GDPR och villkor</a>
+        </small>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <hr />
     <p>Företagsnamn &middot; Adress &middot; Telefon &middot; E-post &middot; Sociala medier</p>
   </footer>
 </body>

@@ -1,13 +1,29 @@
 @media (min-width: 600px) and (max-width: 991px) {
   body { 
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
   header {
+    display: flex;
+    flex-direction: row;          // Lägg elementen i rad
+    justify-content: space-between; // Sprid ut rubrik, form, logga
+    gap: 1rem;
+    flex-wrap: wrap;              // Tillåter radbrytning på små skärmar
+
+    h1 {
+      margin: 0;
+      flex: 1 1 auto;            // Rubrik tar bara plats den behöver
+    }
+
     form {
+      display: flex;
       flex-direction: row; 
       gap: 1rem;
       justify-content: center;
+      flex: 2 1 300px;            // Formulär växer men max 300px
 
       input,
       button {
@@ -22,21 +38,52 @@
         cursor: pointer;
       }
     }
+
+    img {
+      max-width: 100px;
+      height: auto;
+      flex: 1 1 auto;            // Loggan tar bara den plats den behöver
+    }
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 1rem;
+    margin-top: 1rem;
   }
 
   article,
   section {
+    background: white;
     padding: 1.5rem;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 
     button {
       width: auto; 
+      align-self: flex-start;
     }
   }
 
-  form input,
-  form select,
-  form textarea {
-    width: auto;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    input,
+    select,
+    textarea {
+      width: auto;
+      min-width: 250px;
+    }
+  }
+
+  footer {
+    margin-top: auto;
+    text-align: center;
   }
 }
-
